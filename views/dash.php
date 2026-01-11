@@ -31,7 +31,7 @@ if (isset($_POST['delete_project'])) {
     exit;
 }
 
-// Sprint logic added here
+
 if (isset($_POST['add_sprint'])) {
     $sprintRepo->addSprint(
         (int)$_POST['project_id'], 
