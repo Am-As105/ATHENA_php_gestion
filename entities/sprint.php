@@ -1,51 +1,24 @@
 <?php
-
-
-
 class Sprint {
     private int $id;
-    private string $name;
-    private string $startDate;
-    private string $endDate;
-    private int $projectId;
+    private string $title;
+    private string $start_date;
+    private string $end_date;
+    private int $project_id;
 
-    public function getId(): int
-    {
-        return $this->id;
-    }
+    public function getId() { return $this->id; }
+    public function setId(int $id) { $this->id = $id; }
 
-    public function getName(): string
-    {
-        return $this->name;
-    }
+    public function getTitle() { return $this->title; }
+    public function setTitle(string $title) { $this->title = $title; }
 
-    public function setName(string $name)
-    {
-        $this->name = $name;
-    }
+    public function getStartDate() { return $this->start_date; }
+    public function setStartDate(string $start_date) { $this->start_date = $start_date; }
 
-    public function getStartDate(): string
-    {
-        return $this->startDate;
-    }
+    public function getEndDate() { return $this->end_date; }
+    public function setEndDate(string $end_date) { $this->end_date = $end_date; }
 
-    public function setStartDate(string $date)
-    {
-        $this->startDate = $date;
-    }
-
-    public function getEndDate(): string
-    {
-        return $this->endDate;
-    }
-
-    public function setEndDate(string $date)
-    {
-        $this->endDate = $date;
-    }
-
-    public function getProjectId(): int
-    {
-        return $this->projectId;
-    }
+    public function getProjectId() { return $this->project_id; }
+    public function setProjectId(int $project_id) { $this->project_id = $project_id; }
 }
+?>
